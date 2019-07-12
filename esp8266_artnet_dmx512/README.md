@@ -11,26 +11,31 @@ See http://robertoostenveld.nl/art-net-to-dmx512-with-esp8266/ for more details 
 # Components
   - Wemos D1 mini
   - MAX485 module, e.g. http://ebay.to/2iuKQlr
-  - DC-DC boost/buck converter 5V power supply, e.g. http://ebay.to/2iAfOei
   - common cathode RGB LED
-  - 2x 220 Ohm and 1x 100 Ohm resistors
+  - 2x 220 Ohm resistors
+  - 1x 100 Ohm resistor
   - 3 or 5 pin female XLR connector
-  - panel mount 2.1 x 5.5 mm DC barrel jack
-  - 82 x 58 x 34 mm ABS enclosure box
+  - USB A plug for power input
 
 # Wiring scheme
- - connect 5V and GND from the power supply to Vcc and GND of the MAX485 module
- - connect 5V and GND from the power supply to the 5V and GND of the Wemos D1 mini
- - connect pin D4/TX1 of the Wemos D1 mini to the DI (data in) pin of the MAX485 module (using 3.3V TTL)
- - connect GPIO0/D3 of the Wemos D1 mini to the DE (data enable) of the MAX485 module to 3.3V (using 3.3V TTL)
- - connect GPIO4/D2 of the Wemos D1 mini to the RE (receive enable) of the MAX485 module to GND
- - connect GPIO5/D1 of the Wemos D1 mini to the RE (receive enable) of the MAX485 module to GND
+ - connect 5V and GND from the USB A plug to the Vcc and GND of the MAX485 module
+ - connect 5V and GND from the Vcc and GND of the MAX485 module to the 5V and GND of the Wemos D1 mini
  - connect pin A of the MAX485 module to XLR 3
  - connect pin B of the MAX485 module to XLR 2
  - connect GND                        to XLR 1
- - connect the blue  leg of the LED over the 100 Ohm resistor to GPIO16/D0
- - connect the green leg of the LED over the 220 Ohm resistor to GPIO14/D5
- - connect the red   leg of the LED over the 220 Ohm resistor to GPIO12/D6
+ - connect   TX1/D4 of the Wemos D1 mini to the DI (data in) pin of the MAX485 module
+ - connect GPIO0/D3 of the Wemos D1 mini to the DE (data enable) of the MAX485 module
+ - connect GPIO4/D2 of the Wemos D1 mini to the RE (receive enable) of the MAX485 module
+ - connect GPIO5/D1 of the Wemos D1 mini to the Ro (receive output) of the MAX485 module
+ - connect the blue    leg of the LED over the 100 Ohm resistor to GPIO16/D0
+ - connect the green   leg of the LED over the 220 Ohm resistor to GPIO14/D5
+ - connect the red     leg of the LED over the 220 Ohm resistor to GPIO12/D6
+ - connect the cathode leg of the LEDto GND
+
+# XLR conections:
+3 pin: https://mediarealm.com.au/wp-content/uploads/2013/04/XLR-Wiring-Standard-3-pin.jpg
+5 pin: https://mediarealm.com.au/wp-content/uploads/2013/04/XLR-Wiring-Standard-5-pin.jpg
+Would usualy be a male conection for direct connect to lights or socet for extention cable.
 
 # SPIFFS for static files
 
