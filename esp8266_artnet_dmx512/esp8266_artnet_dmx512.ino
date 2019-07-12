@@ -24,7 +24,7 @@
 
 Config config;
 ESP8266WebServer server(80);
-const char* host = "ARTNET";
+const char* host = "ARTNET-1";
 const char* version = __DATE__ " / " __TIME__;
 
 #define LED_B 16  // GPIO16/D0
@@ -123,6 +123,7 @@ void setup() {
   Serial.println("connected");
 
   if (WiFi.status() == WL_CONNECTED)
+    WiFi.hostname(host);
     singleGreen();
 
 #ifdef ENABLE_WEBINTERFACE
