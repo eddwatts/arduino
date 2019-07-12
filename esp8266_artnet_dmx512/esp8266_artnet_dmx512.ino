@@ -28,8 +28,8 @@ const char* host = "ARTNET";
 const char* version = __DATE__ " / " __TIME__;
 
 #define LED_B 16  // GPIO16/D0
-#define LED_G 5   // GPIO05/D1
-#define LED_R 4   // GPIO04/D2
+#define LED_G 14   // GPIO14/D5
+#define LED_R 12   // GPIO12/D6
 
 // Artnet settings
 ArtnetWifi artnet;
@@ -86,6 +86,12 @@ void setup() {
   pinMode(LED_G, OUTPUT);
   pinMode(LED_B, OUTPUT);
 
+  pinMode(d3, OUTPUT); //set de mode
+  pinMode(d2, OUTPUT); //set re mode
+  pinMode(d1, INPUT);  //set RO pin
+  digitalWrite(D1, HIGH);  //enable de mode 
+  digitalWrite(D1, LOW);   //disbale re mode
+  
   global.universe = 0;
   global.sequence = 0;
   global.length = 512;
