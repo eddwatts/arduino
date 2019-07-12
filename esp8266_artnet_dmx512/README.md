@@ -14,7 +14,7 @@ See http://robertoostenveld.nl/art-net-to-dmx512-with-esp8266/ for more details 
   - common cathode RGB LED
   - 2x 220 Ohm resistors
   - 1x 100 Ohm resistor
-  - 3 or 5 pin female XLR connector
+  - 3 or 5 pin female XLR connector or cable
   - USB A plug for power input
 
 # Wiring scheme
@@ -35,7 +35,6 @@ See http://robertoostenveld.nl/art-net-to-dmx512-with-esp8266/ for more details 
 # XLR conections:
 3 pin: https://mediarealm.com.au/wp-content/uploads/2013/04/XLR-Wiring-Standard-3-pin.jpg
 5 pin: https://mediarealm.com.au/wp-content/uploads/2013/04/XLR-Wiring-Standard-5-pin.jpg
-Would usualy be a male conection for direct connect to lights or socet for extention cable.
 
 # SPIFFS for static files
 
