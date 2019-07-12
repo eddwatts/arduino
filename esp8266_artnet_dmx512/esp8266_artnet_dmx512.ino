@@ -86,9 +86,9 @@ void setup() {
   pinMode(LED_G, OUTPUT);
   pinMode(LED_B, OUTPUT);
 
-  pinMode(d3, OUTPUT); //set de mode
-  pinMode(d2, OUTPUT); //set re mode
-  pinMode(d1, INPUT);  //set RO pin
+  pinMode(0, OUTPUT); //set de pin GPIO0/D3 
+  pinMode(4, OUTPUT); //set re pin GPIO4/D2
+  pinMode(5, INPUT);  //set RO pin GPIO5/D1 
   digitalWrite(D1, HIGH);  //enable de mode 
   digitalWrite(D1, LOW);   //disbale re mode
   
