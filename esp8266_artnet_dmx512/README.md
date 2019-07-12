@@ -33,8 +33,8 @@ See http://robertoostenveld.nl/art-net-to-dmx512-with-esp8266/ for more details 
  - connect the cathode leg of the LEDto GND
 
 # XLR conections:
-3 pin: https://mediarealm.com.au/wp-content/uploads/2013/04/XLR-Wiring-Standard-3-pin.jpg
-5 pin: https://mediarealm.com.au/wp-content/uploads/2013/04/XLR-Wiring-Standard-5-pin.jpg
+3 pin: <img src="https://mediarealm.com.au/wp-content/uploads/2013/04/XLR-Wiring-Standard-3-pin.jpg">
+5 pin: <img src="https://mediarealm.com.au/wp-content/uploads/2013/04/XLR-Wiring-Standard-5-pin.jpg">
 
 # SPIFFS for static files
 
