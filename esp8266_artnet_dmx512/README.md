@@ -36,6 +36,9 @@ See http://robertoostenveld.nl/art-net-to-dmx512-with-esp8266/ for more details 
 <img src="https://mediarealm.com.au/wp-content/uploads/2013/04/XLR-Wiring-Standard-3-pin.jpg"><br>
 <img src="https://mediarealm.com.au/wp-content/uploads/2013/04/XLR-Wiring-Standard-5-pin.jpg">
 
+# LED conections
+<img src="http://www.nkcelectronics.com/assets/images/rgb_5mm_cathode.jpg">
+
 # SPIFFS for static files
 
 Please note that you should not only write the firmware to the ESP8266 module, but also the static content for the web interface. The html, css and javascript files located in the data directory should be written to the SPIFS filesystem on the ESP8266. See for example http://esp8266.github.io/Arduino/versions/2.0.0/doc/filesystem.html and https://www.instructables.com/id/Using-ESP8266-SPIFFS for instructions.
